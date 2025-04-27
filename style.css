@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body style */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the game */
+.container {
+  background: #fff;
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Choices (buttons) */
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.choices button {
+  border: none;
+  padding: 20px 30px;
+  font-size: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  color: white;
+}
+
+.choices button:hover {
+  transform: scale(1.1);
+}
+
+/* Different colors for each button */
+button.rock {
+  background-color: #f44336;
+}
+
+button.paper {
+  background-color: #2196f3;
+}
+
+button.scissors {
+  background-color: #4caf50;
+}
+
+/* Result section */
+.result {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+#user-choice, #computer-choice {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #555;
+}
+
+#winner {
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #111;
+}
